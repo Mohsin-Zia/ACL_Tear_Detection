@@ -1,62 +1,62 @@
 <template>
-  <div class="footer">
-    <!-- Logo -->
-    
-    <div class="footer-flex-container">
-      <div class="flex">
-        <a href="/" class="logo">
-      <span class="logo-text">Hai</span><span class="logo-text-bold">Doc</span>
-      <img class="medic-icon" src="./icons/Medic.png" alt="" />
-    </a>
-      <!-- Social Icons -->
-      <div class="footer-social-icons">
-        <img src="./icons/github-142-svgrepo-com.svg" alt="GitHub" class="social-icon text-3xl text-white hover:cursor-pointer " />
-        <img src="./icons/linkedin-svgrepo-com.svg" alt="LinkedIn" class="social-icon text-3xl text-white hover:cursor-pointer" />
-        <img src="./icons/instagram-167-svgrepo-com.svg" alt="Instagram" class="social-icon text-3xl text-white hover:cursor-pointer" />
+  <div class="footer w-full py-10 bg-white border-t border-gray-300 mt-6 flex flex-col items-center">
+    <!-- Logo and Social Icons -->
+    <div class="footer-flex-container grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 max-w-6xl w-full px-4 md:px-24">
+      <div class="flex flex-col items-center md:items-start gap-3">
+        <a href="/" class="logo flex items-center mb-5 md:mb-0">
+          <span class="logo-text text-base font-normal">Hai</span>
+          <span class="logo-text-bold text-base font-bold">Doc</span>
+          <img class="medic-icon w-5 h-5 ml-1" src="./icons/Medic.png" alt="Medic Icon" />
+        </a>
+        <div class="footer-social-icons flex gap-5">
+          <img src="./icons/github-142-svgrepo-com.svg" alt="GitHub" class="social-icon w-5 h-5 cursor-pointer" />
+          <img src="./icons/linkedin-svgrepo-com.svg" alt="LinkedIn" class="social-icon w-5 h-5 cursor-pointer" />
+          <img src="./icons/instagram-167-svgrepo-com.svg" alt="Instagram" class="social-icon w-5 h-5 cursor-pointer" />
+        </div>
       </div>
-      </div>
-   
-      
+
       <!-- Footer Content -->
-      <div class="footer-content">
-        <div class="footer-section">
-          <div class="footer-heading">Company</div>
-          <div class="footer-links">
-            <div> <router-link to="/"> Home</router-link> </div>
-            <div>Subscription</div>
-            <div>Blog</div>
-            <div>Careers</div>
+      <div class="footer-content grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-44 w-full md:w-auto">
+        <div class="footer-section flex flex-col gap-4">
+          <div class="footer-heading text-gray-900 text-base font-medium">Company</div>
+          <div class="footer-links flex flex-col gap-2">
+            <router-link to="/" class="text-gray-600 text-base font-medium">Home</router-link>
+            <router-link to="/" class="text-gray-600 text-base font-medium">Subscription</router-link>
+            <router-link to="/" class="text-gray-600 text-base font-medium">Blog</router-link>
+            <router-link to="/" class="text-gray-600 text-base font-medium">Careers</router-link>
           </div>
         </div>
-        <div class="footer-section">
-          <div class="footer-heading">Products</div>
-          <div class="footer-links">
-            <div>Free</div>
-            <div>Plus</div>
-            <div>Premium</div>
-            <div>Business</div>
+        <div class="footer-section flex flex-col gap-4">
+          <div class="footer-heading text-gray-900 text-base font-medium">Products</div>
+          <div class="footer-links flex flex-col gap-2">
+            <router-link to="/" class="text-gray-600 text-base font-medium">Free</router-link>
+            <router-link to="/" class="text-gray-600 text-base font-medium">Plus</router-link>
+            <router-link to="/" class="text-gray-600 text-base font-medium">Premium</router-link>
+            <router-link to="/" class="text-gray-600 text-base font-medium">Business</router-link>
           </div>
         </div>
-        <div class="footer-section">
-          <div class="footer-heading">Help Center</div>
-          <div class="footer-links">
-            <div>Privacy Policy</div>
-            <div>Terms & Conditions</div>
-            <div>Cookies</div>
+        <div class="footer-section flex flex-col gap-4">
+          <div class="footer-heading text-gray-900 text-base font-medium">Help Center</div>
+          <div class="footer-links flex flex-col gap-2">
+            <router-link to="/" class="text-gray-600 text-base font-medium">Privacy Policy</router-link>
+            <router-link to="/" class="text-gray-600 text-base font-medium">Terms & Conditions</router-link>
+            <router-link to="/" class="text-gray-600 text-base font-medium">Cookies</router-link>
           </div>
         </div>
-        <div class="footer-section">
-          <div class="footer-heading">Support</div>
-          <div class="footer-links">
-            <div>Help Centre</div>
-            <div>Contact us</div>
-            <div class="footer-email">Backfeed@yahoo.com</div>
+        <div class="footer-section flex flex-col gap-4">
+          <div class="footer-heading text-gray-900 text-base font-medium">Support</div>
+          <div class="footer-links flex flex-col gap-2">
+            <router-link to="/" class="text-gray-600 text-base font-medium">Help Centre</router-link>
+            <router-link to="/" class="text-gray-600 text-base font-medium">Contact us</router-link>
+            <router-link to="/" class="footer-email text-gray-600 text-base font-medium underline">Backfeed@yahoo.com</router-link>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer-divider"></div>
-    <div class="footer-copyright">Copyright © 2024 Backfeed AI. All rights reserved</div>
+    <div class="footer-divider w-full h-px bg-gray-300 opacity-30 my-6"></div>
+    <div class="footer-copyright text-gray-600 text-sm font-light">
+      Copyright © 2024 Backfeed AI. All rights reserved
+    </div>
   </div>
 </template>
 
@@ -67,125 +67,5 @@ export default {
 </script>
 
 <style scoped>
-.footer {
-  width: 100%;
-  padding: 40px 0;
-  background: white;
-  border-top: 1px solid #b1b1b1;
-  border-left: 0;
-  border-right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 23px;
-}
-
-.footer-flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1440px;
-  width: 100%;
-  padding: 0 100px;
-  gap: 10px; /* Reduce the gap */
-  margin-left: 120px; /* Adjust the margin to start from left edge */
-}
-
-.flex {
-  display: flex; /* Enable flexbox layout */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  gap: 3px; /* Adjust the gap between logo and icons */
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  float: left; /* Float the logo to the left */
-  margin-bottom: 20px; /* Adjust the margin as needed */
-  text-decoration: none
-}
-
-.logo-text {
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 400;
-}
-
-.logo-text-bold {
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 700;
-}
-
-.medic-icon {
-  width: 20px;
-  height: 20px;
-  margin-left: 5px;
-}
-
-.footer-social-icons {
-  display: flex;
-  gap: 20px;
-}
-
-.social-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.footer-content {
-  display: flex;
-  gap: 90px;
-  margin-right: 70px;
-}
-
-.footer-section {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.footer-heading {
-  color: #0b0e1a;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 500;
-  line-height: 28px;
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.footer-links div {
-  color: #979797;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 500;
-  line-height: 28px;
-}
-
-.footer-email {
-  text-decoration: underline;
-}
-
-.footer-divider {
-  width: 100%;
-  height: 1px;
-  opacity: 0.3;
-  background-color: #b1b1b1;
-  margin: 24px 0;
-}
-
-.footer-copyright {
-  color: #979797;
-  font-size: 14px;
-  font-family: Poppins;
-  font-weight: 400;
-  line-height: 20px;
-}
+/* No scoped styles needed as we are using Tailwind CSS classes */
 </style>

@@ -35,7 +35,10 @@ const handleDemoRequest = () => {
             </div>
           </div>
         </div>
+        <div class="kneeImg">
+
         <img class="image" src="./icons/KneeeInjured.png" alt="Demo Image" />
+        </div>
       </div>
     </div>
     <div>
@@ -119,7 +122,7 @@ const handleDemoRequest = () => {
   position: relative;
   text-align: center;
   flex: 1;
-  margin-top: 30px; /* Add margin at the bottom */
+
 }
 
 .health-care-solutions {
@@ -192,11 +195,17 @@ const handleDemoRequest = () => {
   width: 24px;
   height: 24px;
 }
+.kneeImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 
 .image {
-  width: 20%;
-  height: 40vh;
-  margin-top: 23px;
+  width: 250px;
+  height: 250px;
+  margin: 15px 15px 15px 15px;
 }
 
 .health-care-title {
@@ -287,11 +296,6 @@ const handleDemoRequest = () => {
     font-size: 16px;
   }
 
-  .image {
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-  }
 
   .health-care-solutions {
     margin: 40px auto;
